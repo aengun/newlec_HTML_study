@@ -5,6 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        /* h1, li {
+            color: blue;
+        }
+
+        .a {
+            color: green;
+        }
+
+        #a {
+            color: red;
+        }
+
+        input[type="text"] {
+            background: pink;
+        }
+
+        .input {
+            background: purple;
+        }
+
+        #input {
+            background: green;
+        }
+
+        input {
+            background: yellow;
+        } */
+
+        #header>h1+nav {
+            color: orange;
+            --background: yellowgreen;
+        }
+
+        #header>h1+nav+nav {
+            color: tomato;
+        }
+        
+    </style>
 </head>
 
 <body>
@@ -12,9 +51,9 @@
         <h1>뉴렉처</h1>
 
         <nav>
-            <h1>메인 메뉴</h1>
+            <h1 id="a" class="a">메인 메뉴</h1>
             <ul>
-                <li>학습가이드</li>
+                <li class="a">학습가이드</li>
                 <li>강좌선택</li>
                 <li>Answeris</li>
             </ul>
