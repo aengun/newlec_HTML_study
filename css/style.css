@@ -1,0 +1,56 @@
+        /* h1, li {
+            color: blue;
+        }
+
+        .a {
+            color: green;
+        }
+
+        #a {
+            color: red;
+        }
+
+        input[type="text"] {
+            background: pink;
+        }
+
+        .input {
+            background: purple;
+        }
+
+        #input {
+            background: green;
+        }
+
+        input {
+            background: yellow;
+        } 
+
+        #header>h1~nav {
+            color: orange;
+            --background: yellowgreen;
+        }
+
+        #header>h1+nav+nav {
+            color: tomato;
+        } */
+
+        .header{
+            height: 70px;
+            background: palevioletred;
+        }
+
+        .visual{
+            min-height: 171px;
+            background: palegoldenrod;
+        }
+
+        .body{
+            min-height: 300px;
+            background: palegreen;
+        }
+
+        .footer{
+            height: 100px;
+            background: skyblue;
+        }

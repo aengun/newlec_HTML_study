@@ -1,0 +1,9 @@
+.container{
+    background: beige;
+    display: flex;
+}
+
+.container>div{
+    background: pink;
+    border: 1px solid gray;
+}
