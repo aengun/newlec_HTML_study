@@ -35,22 +35,62 @@
             color: tomato;
         } */
 
+        /* body{
+            font-size: 10px;
+        } */
+
+        .container{
+            --height: 50em;
+            --width: 50em;
+            --background: rgba(255, 0, 0, 0.5);
+            --background: #ff000050;
+            --background: #00000050;
+            width: 960px;
+            height: 100%; /* inherit */
+            min-height: inherit;
+            margin-left: auto;
+            margin-right: auto;
+        } 
+
+        /* ----------------------------------------------- */
+
         .header{
-            height: 70px;
-            background: palevioletred;
+            --background: palevioletred;
+            height: 71px;
         }
 
+        /* ----------------------------------------------- */
+
         .visual{
+            --background: palegoldenrod;
             min-height: 171px;
-            background: palegoldenrod;
+            border-top: 3px solid #8CBA34;
+            background: #313131 url("../image/bg-visual.png") no-repeat center;
         }
 
         .body{
+            --background: palegreen;
             min-height: 300px;
-            background: palegreen;
+            border-top: 5px solid #8CBA34;
+            margin-top: 1pxx;
         }
 
+            .body>.container{
+                display: flex;
+            }
+
+            .aside{
+                --background: purple;
+                width: 205px;
+            }
+
+            .main{
+                --background: gray;
+                width: 755px;
+            }
+
         .footer{
+            --background: skyblue;
             height: 100px;
-            background: skyblue;
+            background: #313131;
         }
