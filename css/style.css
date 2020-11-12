@@ -66,6 +66,7 @@
             min-height: 171px;
             border-top: 3px solid #8CBA34;
             background: #313131 url("../image/bg-visual.png") no-repeat center;
+            
         }
 
         .body{
@@ -77,16 +78,31 @@
 
             .body>.container{
                 display: flex;
+                background: url("../image/bg-body.png") repeat-y center;
             }
 
             .aside{
                 --background: purple;
                 width: 205px;
+                background: url("../image/bg-aside-title.png") no-repeat right top;
+                padding-top: 45px;
             }
+
+                /* .aside>div{
+                    width: 200px;
+                    height: 100px;
+                    border: 1px solid red;
+                    background: url(../image/logo.png) no-repeat;
+                    --background-size: contain;
+                    background-attachment: fixed;
+                    overflow: scroll;
+                } */
 
             .main{
                 --background: gray;
                 width: 755px;
+                box-sizing: border-box;
+                padding: 45px 0px 50px 35px;
             }
 
         .footer{
