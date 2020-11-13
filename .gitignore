@@ -1,0 +1,5 @@
+# test.txt
+*.txt
+# 모든 txt파일
+!aa.txt
+# a.txt는 빼고
