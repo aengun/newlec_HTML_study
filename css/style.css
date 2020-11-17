@@ -56,32 +56,114 @@
             margin-right: auto;
         } 
 
+        .image-button{
+            text-indent: -999px;
+            overflow: hidden;
+            display: inline-block;
+            border: 0;
+        }
+
         /* ----------------------------------------------- */
 
         .header{
             --background: palevioletred;
             height: 71px;
         }
+
             .main-menu{
                 display: inline-block;
                 font-family: "맑은 고딕", "고딕", "Arial", sans-serif;
                 font-size: 15px;
                 font-weight: bold;
                 color: #000;
-                border: 1px solid red;
+                /* border: 1px solid red; */
             }
+
                 .main-menu>ul{
                     display: flex;
+                    border: red solid 1px;
                 }
                 
                 .main-menu>ul>li{
                     padding-left: 24px;
+                    background: url(../image/bg-main-menu-vsp.png) no-repeat 12px center;
+                }
+
+                .main-menu>ul>li:first-child{
+                    padding-left: initial;
+                    background: none;
                 }
                 
                 .main-menu>ul a:hover{
                     color: #ff6a00;
                     text-decoration: none;
                 }
+
+            .shortcut-menu{
+                display: inline-block;
+            }
+            
+                .shortcut-menu-list{
+                    border: 1px solid red;
+                    display: flex;
+                    font-size: 0px;
+                }
+                    .shortcut-menu-list li{
+                        height: 17px;
+                    }
+
+                    /* .shortcut-menu-list li:first-child a{
+                        background: url(../image/txt-mypage.png) no-repeat center;
+                    }
+
+                    .shortcut-menu-list li:nth-child(2) a{
+                        background: url(../image/txt-customer.png) no-repeat center;
+                    } */
+
+                    .shortcut-menu-list .mypage-button{
+                        background: url(../image/txt-mypage.png) no-repeat center;
+                        width: 72px;
+                        height: 17px;
+                    }
+
+                    .shortcut-menu-list .customer-button{
+                        background: url(../image/txt-customer.png) no-repeat center;
+                        width: 72px;
+                        height: 17px;
+                    }
+            
+            .lecture-form{
+                border: 5px solid olivedrab;
+                display: inline-block;
+            }   
+                .lecture-form .find-button{
+                    background: url(../image/btn-find.png) no-repeat center;
+                    width: 31px;
+                    height: 25px;
+                    border: 1px solid olivedrab;
+                }
+
+            .member-menu{
+                display: inline-block;
+                font-family: "맑은 고딕", "고딕", "Arial", sans-serif;
+                font-size: 10px;
+                font-weight: bold;
+                color: #979797;
+            }
+                .member-menu>ul{
+                    display: flex;
+                    border: red solid 1px;
+                }
+                
+                    .member-menu>ul>li{
+                        padding-left: 9px;
+                        background: url(../image/bg-member-menu-sp.png) no-repeat 4.5px center;
+                    }
+
+                        .member-menu>ul>li:first-child{
+                            padding-left: initial;
+                            background: none;
+                        }
 
         /* ----------------------------------------------- */
 
@@ -96,7 +178,7 @@
             --background: palegreen;
             min-height: 300px;
             border-top: 5px solid #8CBA34;
-            margin-top: 1pxx;
+            margin-top: 1px;
         }
 
             .body>.container{
